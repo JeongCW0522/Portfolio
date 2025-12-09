@@ -1,7 +1,7 @@
 import { experienceList } from "../../data/experience";
 import ExperienceCard from "./ExperienceCard";
 
-const Experience1 = () => {
+const ExperienceCommunity = () => {
   return (
     <>
       {experienceList.map((item) => (
@@ -11,4 +11,4 @@ const Experience1 = () => {
   );
 };
 
-export default Experience1;
+export default ExperienceCommunity;

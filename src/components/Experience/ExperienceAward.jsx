@@ -1,6 +1,6 @@
 import ExperienceCard from "./ExperienceCard";
 
-const Experience2 = () => {
+const ExperienceAward = () => {
   return (
     <ExperienceCard
       title="Leets 프로젝트 대상"
@@ -13,4 +13,4 @@ const Experience2 = () => {
   );
 };
 
-export default Experience2;
+export default ExperienceAward;

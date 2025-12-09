@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import PageTitle from "./layouts/PageTitle";
-import Experience1 from "./Experience/Experience1";
+import ExperienceCommunuty from "./Experience/ExperienceCommunuty";
 import { Users, Award } from "lucide-react";
-import Experience2 from "./Experience/Experience2";
+import ExperienceAward from "./Experience/ExperienceAward";
 
 const experience = () => {
   return (
@@ -25,7 +25,7 @@ const experience = () => {
           <h2 className="text-white text-2xl">Community</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Experience1 />
+          <ExperienceCommunuty />
         </div>
       </div>
 
@@ -37,7 +37,7 @@ const experience = () => {
           <h2 className="text-white text-2xl">Awards</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Experience2 />
+          <ExperienceAward />
         </div>
       </div>
     </motion.div>
