@@ -35,25 +35,25 @@ export const skillCards = [
   {
     title: "Frontend",
     color: "from-purple-500 to-pink-500",
-    hoverColor: "hover:border-purple-500",
+    hoverColor: "hover:border-purple-500/40",
     skills: frontendSkills,
   },
   {
     title: "Backend",
     color: "from-green-400 to-green-600",
-    hoverColor: "hover:border-green-400",
+    hoverColor: "hover:border-green-400/40",
     skills: backendSkills,
   },
   {
     title: "Cloud",
     color: "from-blue-400 to-blue-600",
-    hoverColor: "hover:border-blue-500",
+    hoverColor: "hover:border-blue-500/40",
     skills: cloudSkills,
   },
   {
     title: "Tools",
     color: "from-orange-400 to-orange-600",
-    hoverColor: "hover:border-orange-500",
+    hoverColor: "hover:border-orange-500/40",
     skills: toolSkills,
   },
 ];
