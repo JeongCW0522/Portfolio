@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter>
       <Header />
 
-      <div className="bg-black h-screen pt-20">
+      <div className="bg-black min-h-screen pt-20">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/tachStack" element={<TechStack />} />
