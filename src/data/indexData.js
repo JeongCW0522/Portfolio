@@ -1,7 +1,7 @@
 export const interestItems = [
   "Frontend",
   "UI/UX Design",
-  "Animation",
+  "Animation Design",
   "Web Accessibility",
 ];
 
@@ -15,7 +15,7 @@ export const nextGoals = [
   { color: "bg-blue-400", text: "Next.js" },
   { color: "bg-green-400", text: "Three.js" },
   { color: "bg-orange-400", text: "Flutter" },
-  { color: "bg-pink-400", text: "Docker" },
+  { color: "bg-pink-400", text: "Kubernetes" },
 ];
 
 export const careerGoals = [
@@ -27,7 +27,7 @@ export const careerGoals = [
   {
     dotColor: "bg-blue-400",
     title: "Frontend Developer",
-    desc: "애니메이션 기능도 자유자재로 다루며 사용자 경험에 다양성을 줄 수 있는 프론트엔드 개발자",
+    desc: "애니메이션 기능도 자유자재로 다루며 다양한 사용자 경험에 체험시켜 줄 수 있는 프론트엔드 개발자",
   },
   {
     dotColor: "bg-blue-400",

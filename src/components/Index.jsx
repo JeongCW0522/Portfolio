@@ -42,7 +42,7 @@ const Index = () => {
 
             <InfoCard
               title="Interests"
-              icon={<GraduationCap />}
+              icon={<BookOpen />}
               hoverColor="border-pink-500"
               iconBgColor="from-purple-500 to-pink-500"
             >
@@ -60,7 +60,7 @@ const Index = () => {
 
             <InfoCard
               title="Learning"
-              icon={<GraduationCap />}
+              icon={<BookText />}
               hoverColor="border-green-300"
               iconBgColor="from-green-300 to-green-600"
             >
@@ -79,7 +79,7 @@ const Index = () => {
 
             <InfoCard
               title="Next Goals"
-              icon={<GraduationCap />}
+              icon={<Goal />}
               hoverColor="border-orange-400"
               iconBgColor="from-orange-400 to-orange-600"
             >
@@ -98,7 +98,7 @@ const Index = () => {
 
             <InfoCard
               title="Career Goals"
-              icon={<GraduationCap />}
+              icon={<Briefcase />}
               hoverColor="border-blue-400"
               iconBgColor="from-blue-600 to-blue-400"
             >
