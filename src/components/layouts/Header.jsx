@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="bg-[#0f0420] p-4 flex justify-center items-center h-20 fixed top-0 left-0 w-full z-50 border border-b-[#272727]">
       <div className="flex justify-between items-center w-full max-w-6xl">
-        <h2 className="bg-linear-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent text-xl font-bold">
+        <h2 className="bg-linear-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent text-2xl font-bold">
           MyPortfolio
         </h2>
 
