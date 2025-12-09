@@ -4,7 +4,7 @@ const InfoCard = ({ icon, title, children, hoverColor, iconBgColor }) => {
   return (
     <div
       className={clsx(
-        "p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:scale-103",
+        "p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:scale-103",
         `hover:${hoverColor}`
       )}
     >

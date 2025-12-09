@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import {
   GraduationCap,
   BookOpen,
@@ -15,6 +14,7 @@ import {
 } from "../data/indexData";
 import ProfileCard from "./IndexPage/ProfileCard";
 import InfoCard from "./IndexPage/InfoCard";
+import clsx from "clsx";
 
 const Index = () => {
   return (
@@ -24,7 +24,7 @@ const Index = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
       <div className="flex justify-center items-start p-15">
-        <div className="w-full max-w-6xl p-10 bg-linear-to-br from-[#271b38] to-[rgb(1,11,26)] border border-[#272727] rounded-2xl">
+        <div className="w-full max-w-6xl p-10 bg-linear-to-br from-[#271b38] to-[rgb(1,11,26)] border border-[#272727] rounded-3xl">
           <ProfileCard />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-15">
@@ -70,7 +70,7 @@ const Index = () => {
                     key={item.text}
                     className="flex items-center gap-3 transform transition-transform duration-300 hover:translate-x-2"
                   >
-                    <div className={`w-1 h-7 ${item.color} rounded-full`} />
+                    <div className={clsx("w-1 h-7 rounded-full", item.color)} />
                     <span>{item.text}</span>
                   </li>
                 ))}
@@ -89,7 +89,7 @@ const Index = () => {
                     key={item.text}
                     className="flex items-center gap-3 transform transition-transform duration-300 hover:translate-x-2"
                   >
-                    <div className={`w-1 h-7 ${item.color} rounded-full`} />
+                    <div className={clsx("w-1 h-7 rounded-full", item.color)} />
                     <span>{item.text}</span>
                   </li>
                 ))}
@@ -110,7 +110,7 @@ const Index = () => {
                   >
                     <div className="flex items-center gap-3">
                       <div
-                        className={`w-3 h-3 ${item.dotColor} rounded-full`}
+                        className={clsx("w-3 h-3 rounded-full", item.dotColor)}
                       />
                       <span className="text-lg">{item.title}</span>
                     </div>
