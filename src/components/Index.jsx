@@ -31,7 +31,7 @@ const Index = () => {
           <InfoCard
             title="Academic"
             icon={<GraduationCap />}
-            hoverColor="border-purple-500"
+            hoverColor="hover:border-purple-500"
             iconBgColor="from-blue-500 to-purple-500"
           >
             <p className="text-gray-400 text-sm mb-1">전공</p>
@@ -43,14 +43,14 @@ const Index = () => {
           <InfoCard
             title="Interests"
             icon={<BookOpen />}
-            hoverColor="border-pink-500"
+            hoverColor="hover:border-pink-500"
             iconBgColor="from-purple-500 to-pink-500"
           >
             <div className="flex flex-wrap gap-3">
               {interestItems.map((item) => (
                 <span
                   key={item}
-                  className={`px-4 py-2.5 text-white rounded-full bg-linear-to-br from-blue-500/40 to-purple-500/40 border border-[#6b6a6a] hover:scale-110 transition duration-300 hover:border-${color}`}
+                  className="px-4 py-2.5 text-white rounded-full bg-linear-to-br from-blue-500/40 to-purple-500/40 border border-[#6b6a6a] hover:scale-110 transition duration-300"
                 >
                   {item}
                 </span>
@@ -61,7 +61,7 @@ const Index = () => {
           <InfoCard
             title="Learning"
             icon={<BookText />}
-            hoverColor="border-green-300"
+            hoverColor="hover:border-green-300"
             iconBgColor="from-green-300 to-green-600"
           >
             <ul className="space-y-3 text-white">
@@ -80,7 +80,7 @@ const Index = () => {
           <InfoCard
             title="Next Goals"
             icon={<Goal />}
-            hoverColor="border-orange-400"
+            hoverColor="hover:border-orange-400"
             iconBgColor="from-orange-400 to-orange-600"
           >
             <ul className="space-y-3 text-white">
@@ -99,7 +99,7 @@ const Index = () => {
           <InfoCard
             title="Career Goals"
             icon={<Briefcase />}
-            hoverColor="border-blue-400"
+            hoverColor="hover:border-blue-400"
             iconBgColor="from-blue-600 to-blue-400"
           >
             <ul className="space-y-3 text-white">
