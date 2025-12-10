@@ -1,14 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  CircleCheckBig,
-  Zap,
-  Layers,
-  Lightbulb,
-  ChevronsLeftRight,
-  CircleAlert,
-  TrendingUp,
-  Heart,
-} from "lucide-react";
 import { useState } from "react";
 import clsx from "clsx";
 import ProjectHeader from "./ProjectHeader";
@@ -19,7 +9,7 @@ import ProjectImplementation from "./ProjectImplementation";
 import ProjectResults from "./ProjectResults";
 import ProjectTrouble from "./ProjectTrouble";
 
-const Project1 = ({ item }) => {
+const ProjectCard = ({ item }) => {
   const [isOpen, setIsOpen] = useState();
 
   return (
@@ -42,15 +32,10 @@ const Project1 = ({ item }) => {
           >
             <div className="p-10 rounded-b-2xl bg-linear-to-br from-[#271b38] to-[rgb(1,11,26)] border border-white/10">
               <ProjectFeatueres item={item} />
-
               <ProjectTechStack item={item} />
-
               <ProjectMotivation item={item} />
-
               <ProjectImplementation item={item} />
-
               <ProjectTrouble item={item} />
-
               <ProjectResults item={item} />
             </div>
           </motion.div>
@@ -60,4 +45,4 @@ const Project1 = ({ item }) => {
   );
 };
 
-export default Project1;
+export default ProjectCard;

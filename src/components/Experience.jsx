@@ -4,7 +4,7 @@ import ExperienceCommunuty from "./Experience/ExperienceCommunuty";
 import { Users, Award } from "lucide-react";
 import ExperienceAward from "./Experience/ExperienceAward";
 
-const experience = () => {
+const Experience = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -44,4 +44,4 @@ const experience = () => {
   );
 };
 
-export default experience;
+export default Experience;

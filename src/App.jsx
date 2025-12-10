@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Index from "./components/Index";
+import Home from "./components/Home";
 import TechStack from "./components/TechStack";
 import Project from "./components/Project";
 import Experience from "./components/Experience";
@@ -7,7 +7,6 @@ import Strengths from "./components/Strengths";
 import Contact from "./components/Contact";
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
-// import LoadingComponent from "./Loading";
 
 export default function App() {
   return (
@@ -16,7 +15,7 @@ export default function App() {
 
       <div className="bg-black min-h-screen">
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Home />} />
           <Route path="/tachStack" element={<TechStack />} />
           <Route path="/project" element={<Project />} />
           <Route path="/experience" element={<Experience />} />

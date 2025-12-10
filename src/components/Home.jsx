@@ -6,7 +6,7 @@ import LearningInfo from "./Introduce/LearningInfo";
 import GoalsInfo from "./Introduce/GoalsInfo";
 import CareerGoalsInfo from "./Introduce/CareerGoalsInfo";
 
-const Index = () => {
+const Home = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -29,4 +29,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;

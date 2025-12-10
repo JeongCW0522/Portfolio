@@ -3,7 +3,7 @@ import PageTitle from "./layouts/PageTitle";
 import { projectItems } from "../data/projectItems";
 import ProjectCard from "./Project/ProjectCard";
 
-const TechStack = () => {
+const Project = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -25,4 +25,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default Project;
