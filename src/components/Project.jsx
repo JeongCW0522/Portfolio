@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import PageTitle from "./layouts/PageTitle";
-import Project1 from "./Project/Project1";
-import Project2 from "./Project/Project2";
-import Project3 from "./Project/Project3";
+import { projectItems } from "../data/projectItems";
+import ProjectCard from "./Project/ProjectCard";
 
 const TechStack = () => {
   return (
@@ -18,9 +17,9 @@ const TechStack = () => {
       />
 
       <div className="flex flex-col items-center gap-7 w-full ">
-        <Project1 />
-        <Project2 />
-        <Project3 />
+        {projectItems.map((item, i) => (
+          <ProjectCard key={i} item={item} />
+        ))}
       </div>
     </motion.div>
   );
