@@ -16,7 +16,7 @@ const TechStack = () => {
         subTitle="Technologies I've mastered through various projects"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
         {skillCards.map((card) => (
           <SkillCard
             key={card.title}

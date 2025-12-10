@@ -38,7 +38,7 @@ const Strengths = () => {
         variants={cardsContainer}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mt-10"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl"
       >
         {strengthsList.map((item) => (
           <motion.div key={item.title} variants={cardItem}>

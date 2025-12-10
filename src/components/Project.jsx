@@ -17,9 +17,11 @@ const TechStack = () => {
         subTitle="Problem-solving through creative development"
       />
 
-      <Project1 />
-      <Project2 />
-      <Project3 />
+      <div className="flex flex-col items-center gap-7 w-full ">
+        <Project1 />
+        <Project2 />
+        <Project3 />
+      </div>
     </motion.div>
   );
 };
