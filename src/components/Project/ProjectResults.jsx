@@ -20,7 +20,7 @@ const ProjectResults = ({ item }) => {
             <Heart className="text-rose-500" />
             <h1 className="text-xl text-white">Reflection</h1>
           </div>
-          <div className="bg-rose-400/10 p-6 space-y-5 rounded-xl border border-blue-500/40">
+          <div className="bg-rose-400/10 p-6 space-y-5 rounded-xl border border-rose-500/40">
             <p className="text-gray-300 break-keep leading-5">
               {item.reflection}
             </p>
