@@ -3,6 +3,24 @@ import PageTitle from "./layouts/PageTitle";
 import StrengthsCard from "./Strengths/StrengthsCard";
 import { strengthsList } from "../data/strangthsItem";
 
+const cardsContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardItem = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
+};
+
 const Strengths = () => {
   return (
     <motion.div
@@ -16,11 +34,18 @@ const Strengths = () => {
         subTitle="Key competencies developed through projects and experiences"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mt-10">
+      <motion.div
+        variants={cardsContainer}
+        initial="hidden"
+        animate="show"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mt-10"
+      >
         {strengthsList.map((item) => (
-          <StrengthsCard key={item.title} {...item} />
+          <motion.div key={item.title} variants={cardItem}>
+            <StrengthsCard {...item} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
