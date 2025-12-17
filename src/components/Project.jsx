@@ -19,7 +19,7 @@ const Project = () => {
         subTitle="Problem-solving through creative development"
       />
 
-      <div className="relative w-full max-w-7xl h-[420px] flex items-center justify-center overflow-hidden">
+      <div className="relative w-full max-w-7xl h-60 flex items-center justify-center overflow-hidden">
         {projectItems.map((item, index) => (
           <ProjectCard
             key={item.title}

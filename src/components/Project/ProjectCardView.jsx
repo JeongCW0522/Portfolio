@@ -7,7 +7,7 @@ const ProjectCardView = ({ item }) => {
 
       <p className="text-gray-200 mb-4">{item.subTitle}</p>
 
-      <div className="flex gap-3">
+      <div className="flex flex-col gap-3">
         <div className="px-3 py-1 rounded-full bg-white/20 text-sm flex items-center gap-2 text-white">
           <Calendar size={14} />
           {item.date}
