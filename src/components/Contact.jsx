@@ -16,8 +16,8 @@ const Contact = () => {
       />
 
       <div className="flex justify-center">
-        <div className="w-full max-w-2xl p-8 bg-linear-to-br from-[#271b38] to-[rgb(1,18,44)] border border-[#272727] rounded-3xl">
-          <h2 className="text-gray-400 text-3xl font-semibold mb-8">Contact</h2>
+        <div className="w-full max-w-2xl p-8 bg-bgColor border border-border rounded-3xl">
+          <h2 className="text-gray-500 text-3xl font-semibold mb-8">Contact</h2>
 
           <div className="space-y-5">
             {contactItems.map((item) => (
