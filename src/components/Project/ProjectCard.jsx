@@ -43,7 +43,7 @@ const ProjectCard = ({
           damping: 28,
         }}
         className={clsx(
-          "group absolute w-100 h-72 cursor-pointer overflow-hidden rounded-3xl border border-white/10"
+          "group absolute w-100 h-72 cursor-pointer overflow-hidden rounded-3xl shadow-lg"
         )}
       >
         <img

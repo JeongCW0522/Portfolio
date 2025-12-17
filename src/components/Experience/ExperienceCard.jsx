@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 const ExperienceCard = ({ title, date, desc, Achieve1, Achieve2, color }) => {
   return (
-    <div className="flex relative transition-all duration-300 hover:-translate-y-1 hover:scale-103 rounded-xl">
+    <div className="flex relative transition-all duration-300 hover:-translate-y-1 hover:scale-103 rounded-xl shadow-lg">
       <div
         className={clsx(
           "absolute left-0 top-1/2 -translate-y-1/2 w-2 h-full bg-linear-to-b rounded-full",
