@@ -8,6 +8,7 @@ import ProjectMotivation from "./ProjectMotivation";
 import ProjectImplementation from "./ProjectImplementation";
 import ProjectResults from "./ProjectResults";
 import ProjectTrouble from "./ProjectTrouble";
+import ProjectGithubLink from "./ProjectGitHubLink";
 
 const ProjectCard = ({ item }) => {
   const [isOpen, setIsOpen] = useState();
@@ -37,6 +38,7 @@ const ProjectCard = ({ item }) => {
               <ProjectImplementation item={item} />
               <ProjectTrouble item={item} />
               <ProjectResults item={item} />
+              <ProjectGithubLink url={item.gitHub} />
             </div>
           </motion.div>
         )}

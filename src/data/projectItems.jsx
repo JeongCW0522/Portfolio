@@ -57,6 +57,7 @@ export const projectItems = [
       "접근성 개선",
     ],
     bgColor: "from-blue-600 to-blue-400",
+    gitHub: "https://github.com/Leets-Official/BOOKMARK-FE",
   },
   {
     title: "Docker 기반 북마크 플랫폼 풀스택 구축",
@@ -103,6 +104,7 @@ export const projectItems = [
       "모바일 웹 개발",
     ],
     bgColor: "from-purple-600 via-pink-400 to-pink-500",
+    gitHub: "https://github.com/JeongCW0522/Cloud-Native-report",
   },
   {
     title: "AI 기반 면접 코칭 플랫폼",
@@ -156,5 +158,6 @@ export const projectItems = [
       "자기소개서 분석도 추가",
     ],
     bgColor: "from-green-500 to-green-600",
+    gitHub: "https://github.com/JobMate-team/jobmate-frontend",
   },
 ];
