@@ -8,7 +8,6 @@ import ProjectResults from "./ProjectResults";
 import ProjectGithubLink from "./ProjectGitHubLink";
 import { X } from "lucide-react";
 import ProjectHeader from "./ProjectHeader";
-import clsx from "clsx";
 import { useEffect } from "react";
 
 const backdrop = {

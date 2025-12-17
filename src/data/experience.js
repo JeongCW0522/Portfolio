@@ -19,8 +19,9 @@ export const experienceCommunityList = [
     title: "UMC",
     date: "2025.09 ~",
     desc: "중앙 개발 연합 동아리",
-    Achieve1: "학기 중 과제 주차 별 스터디 진행하며 워크북 학습",
-    Achieve2: "교내 해커톤과 데모데이 프로젝트로 협업 경험",
+    Achieve1:
+      "웹 파트 시니어 챌린저로 활동하며 스터디원들에게 따로 제작한 공부 자료 배포",
+    Achieve2: "학기 중 주차 별 워크북 공부 후 스터디 진행",
     color: "from-purple-500 to-pink-500",
   },
 ];

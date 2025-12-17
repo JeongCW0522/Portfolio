@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import clsx from "clsx";
-import ProjectModal from "./ProjectModal";
 import { Calendar } from "lucide-react";
 
 const getOffset = (index, activeIndex, length) => {

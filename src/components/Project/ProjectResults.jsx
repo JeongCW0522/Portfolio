@@ -3,7 +3,6 @@ import { Heart, TrendingUp } from "lucide-react";
 const ProjectResults = ({ item }) => {
   return (
     <div>
-      {" "}
       <div className="flex items-stretch gap-5 mt-10 mb-5">
         <div className="flex-1 flex flex-col gap-5">
           <div className="flex items-center gap-2">
