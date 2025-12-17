@@ -9,19 +9,19 @@ const ExperienceCard = ({ title, date, desc, Achieve1, Achieve2, color }) => {
           color
         )}
       />
-      <div className="w-full max-w-xl p-8 rounded-xl border border-border bg-bgColor space-y-3 transision">
-        <h3 className="text-gray-500 font-medium text-xl">{title}</h3>
+      <div className="w-full max-w-xl p-8 rounded-xl border border-border bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)] space-y-3 transision">
+        <h3 className="text-gray-100 font-medium text-xl">{title}</h3>
         <p className="text-gray-400">{date}</p>
-        <p className="text-gray-500 my-5 mb-10">{desc}</p>
-        <h3 className="text-gray-500 font-medium text-lg mb-5">Activities</h3>
+        <p className="text-gray-300 my-5 mb-10">{desc}</p>
+        <h3 className="text-gray-100 font-medium text-lg mb-5">Activities</h3>
 
         <div className="flex items-center gap-3">
-          <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-gray-500">{Achieve1}</p>
+          <div className="w-2 h-2 bg-gray-300 rounded-full" />
+          <p className="text-gray-300">{Achieve1}</p>
         </div>
         <div className="flex items-center gap-3">
-          <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-gray-500">{Achieve2}</p>
+          <div className="w-2 h-2 bg-gray-300 rounded-full" />
+          <p className="text-gray-200">{Achieve2}</p>
         </div>
       </div>
     </div>

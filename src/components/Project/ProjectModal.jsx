@@ -40,7 +40,7 @@ const ProjectModal = ({ isOpen, onClose, item }) => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-center items-center px-6 overflow-hidden"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex justify-center items-center"
           onClick={onClose}
         >
           <motion.div
@@ -49,24 +49,9 @@ const ProjectModal = ({ isOpen, onClose, item }) => {
             animate="show"
             exit="exit"
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-5xl max-h-[85vh] overflow-y-auto hide-scrollbar rounded-3xl p-10 bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]"
+            className="w-full max-w-6xl max-xl:w-[90%] max-h-[85vh] overflow-y-auto hide-scrollbar rounded-3xl p-10 bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]"
           >
-            {/* 닫기 버튼 */}
-            <button
-              onClick={onClose}
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition"
-            >
-              <X size={24} />
-            </button>
-
-            <div
-              className={clsx(
-                "w-full max-w-6xl p-10 bg-linear-to-r border border-border rounded-3xl",
-                item.bgColor
-              )}
-            >
-              <ProjectHeader item={item} />
-            </div>
+            <ProjectHeader item={item} onClose={onClose} />
 
             <ProjectFeatures item={item} />
             <ProjectTechStack item={item} />

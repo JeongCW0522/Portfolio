@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import clsx from "clsx";
-import ProjectHeader from "./ProjectHeader";
 import ProjectModal from "./ProjectModal";
-import ProjectCardView from "./ProjectCardView";
 import { Calendar } from "lucide-react";
 
 const getOffset = (index, activeIndex, length) => {
