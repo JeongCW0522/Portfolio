@@ -1,49 +1,61 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import clsx from "clsx";
 import ProjectHeader from "./ProjectHeader";
-import ProjectFeatures from "./ProjectFeatures";
-import ProjectTechStack from "./ProjectTechStack";
-import ProjectMotivation from "./ProjectMotivation";
-import ProjectImplementation from "./ProjectImplementation";
-import ProjectResults from "./ProjectResults";
-import ProjectTrouble from "./ProjectTrouble";
-import ProjectGithubLink from "./ProjectGitHubLink";
+import ProjectModal from "./ProjectModal";
+import ProjectCardView from "./ProjectCardView";
 
-const ProjectCard = ({ item }) => {
-  const [isOpen, setIsOpen] = useState();
+const getOffset = (index, activeIndex, length) => {
+  const raw = index - activeIndex;
+  const half = Math.floor(length / 2);
+  if (raw > half) return raw - length;
+  if (raw < -half) return raw + length;
+  return raw;
+};
+
+const ProjectCard = ({ item, index, activeIndex, setActiveIndex, total }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const offset = getOffset(index, activeIndex, total);
+
+  const handleClick = () => {
+    if (offset === 0) {
+      // 가운데 카드일 때만 모달 열기
+      setIsOpen(true);
+    } else {
+      // 옆 카드일 때는 가운데로 이동
+      setActiveIndex(index);
+    }
+  };
 
   return (
-    <div
-      className={clsx(
-        "w-full max-w-6xl p-10 bg-linear-to-r border border-border rounded-3xl overflow-hidden",
-        item.bgColor
-      )}
-    >
-      <ProjectHeader item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: "auto" }}
-            exit={{ height: 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="overflow-hidden mt-10 -mb-10 -mx-10"
-          >
-            <div className="p-10 rounded-b-2xl bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]">
-              <ProjectFeatures item={item} />
-              <ProjectTechStack item={item} />
-              <ProjectMotivation item={item} />
-              <ProjectImplementation item={item} />
-              <ProjectTrouble item={item} />
-              <ProjectResults item={item} />
-              <ProjectGithubLink url={item.gitHub} />
-            </div>
-          </motion.div>
+    <>
+      <motion.div
+        onClick={handleClick}
+        animate={{
+          x: offset * 320,
+          scale: offset === 0 ? 1 : 0.85,
+          opacity: Math.abs(offset) > 1 ? 0 : 1,
+          zIndex: offset === 0 ? 10 : 5,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 28,
+        }}
+        className={clsx(
+          "absolute w-[300px] cursor-pointer p-8 rounded-3xl border border-border bg-linear-to-r",
+          item.bgColor
         )}
-      </AnimatePresence>
-    </div>
+      >
+        <ProjectCardView item={item} />
+      </motion.div>
+
+      <ProjectModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        item={item}
+      />
+    </>
   );
 };
 

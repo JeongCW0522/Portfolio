@@ -56,7 +56,7 @@ export const projectItems = [
       "모바일 웹 개발",
       "접근성 개선",
     ],
-    bgColor: "from-blue-600 to-blue-400",
+    bgColor: "from-blue-500 to-blue-400",
     gitHub: "https://github.com/Leets-Official/BOOKMARK-FE",
   },
   {
@@ -103,7 +103,7 @@ export const projectItems = [
       "SSR 또는 SSG 성능 개선 연구",
       "모바일 웹 개발",
     ],
-    bgColor: "from-purple-600 via-pink-400 to-pink-500",
+    bgColor: "from-fuchsia-500 to-pink-400",
     gitHub: "https://github.com/JeongCW0522/Cloud-Native-report",
   },
   {
@@ -157,7 +157,7 @@ export const projectItems = [
       "AI 답변에 대한 상세 피드백 유형 확장",
       "자기소개서 분석도 추가",
     ],
-    bgColor: "from-green-500 to-green-600",
+    bgColor: "from-teal-500 to-teal-400",
     gitHub: "https://github.com/JobMate-team/jobmate-frontend",
   },
 ];

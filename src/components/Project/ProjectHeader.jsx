@@ -14,13 +14,13 @@ const ProjectHeader = ({ item, isOpen, setIsOpen }) => {
         />
       </div>
 
-      <p className="text-gray-300 text-xl mb-5">{item.subTitle}</p>
+      <p className="text-gray-200 text-xl mb-5">{item.subTitle}</p>
       <div className="flex items-center gap-3">
-        <div className=" bg-blue-200/30 px-4 py-2 rounded-full flex items-center text-gray-200 gap-2">
+        <div className=" bg-blue-200/30 px-4 py-2 rounded-full flex items-center text-gray-100 gap-2">
           <Calendar size={18} />
           <span>{item.date}</span>
         </div>
-        <div className=" bg-blue-200/30 px-4 py-2 rounded-full flex items-center text-gray-200 gap-2">
+        <div className=" bg-blue-200/30 px-4 py-2 rounded-full flex items-center text-gray-100 gap-2">
           <Users size={18} /> <span>{item.people}</span>
         </div>
       </div>

@@ -40,3 +40,16 @@ button {
   --color-bgColor: #f5f4f4;
   --color-border: #e5e5e5;
 }
+
+/* Hide scrollbar */
+.hide-scrollbar {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE, Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
