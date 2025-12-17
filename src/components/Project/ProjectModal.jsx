@@ -66,7 +66,7 @@ const ProjectModal = ({ isOpen, onClose, item }) => {
             animate="show"
             exit="exit"
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-6xl max-xl:w-[90%] max-h-[85vh] overflow-y-auto hide-scrollbar rounded-3xl pt-5 px-10 pb-10 bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]"
+            className="relative w-full max-w-6xl max-xl:w-[90%] max-h-[85vh] overflow-y-auto hide-scrollbar rounded-3xl sm:pt-5 px-5 sm:px-10 pb-10 bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]"
           >
             <button
               type="button"

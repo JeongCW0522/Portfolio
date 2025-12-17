@@ -32,7 +32,7 @@ const ProjectCard = ({
       <motion.div
         onClick={handleClick}
         animate={{
-          x: offset * 320,
+          x: offset * 400,
           scale: offset === 0 ? 1 : 0.8,
           opacity: Math.abs(offset) > 1 ? 0 : 1,
           zIndex: offset === 0 ? 10 : 5,
@@ -43,7 +43,7 @@ const ProjectCard = ({
           damping: 28,
         }}
         className={clsx(
-          "group absolute w-85 h-60 cursor-pointer overflow-hidden rounded-3xl border border-white/10"
+          "group absolute w-100 h-72 cursor-pointer overflow-hidden rounded-3xl border border-white/10"
         )}
       >
         <img

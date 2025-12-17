@@ -2,11 +2,11 @@ import { CircleCheckBig, Zap } from "lucide-react";
 
 const ProjectFeatures = ({ item }) => {
   return (
-    <div className="flex gap-10">
+    <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
       <img
         src={item.image}
         alt="북마크 플랫폼"
-        className="min-w-150 h-90 rounded-lg"
+        className="w-full sm:min-w-150 h-60 sm:h-90 object-cover rounded-xl"
       />
       <div className="w-full">
         <div className="flex items-center gap-2 mb-3">

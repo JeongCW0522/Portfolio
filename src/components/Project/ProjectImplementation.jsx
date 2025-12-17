@@ -18,7 +18,7 @@ const ProjectImplementation = ({ item }) => {
                 item.bgColor
               )}
             />
-            <span className="text-gray-300">{implement}</span>
+            <span className="text-gray-300 leading-5">{implement}</span>
           </div>
         ))}
       </div>
