@@ -22,7 +22,7 @@ const Experience = () => {
           <div className="bg-linear-to-br from-purple-500 to-pink-500 rounded-2xl p-3 text-white">
             <Users />
           </div>
-          <h2 className="text-white text-2xl">Community</h2>
+          <h2 className="text-gray-500 font-medium text-2xl">Community</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ExperienceCommunuty />
@@ -34,7 +34,7 @@ const Experience = () => {
           <div className="bg-linear-to-br from-orange-400 to-orange-600 rounded-2xl p-3 text-white">
             <Award />
           </div>
-          <h2 className="text-white text-2xl">Awards</h2>
+          <h2 className="text-gray-500 font-medium text-2xl">Awards</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ExperienceAward />

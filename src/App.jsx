@@ -13,7 +13,7 @@ export default function App() {
     <BrowserRouter>
       <Header />
 
-      <div className="bg-[#fafafa] min-h-screen">
+      <div className="bg-[#ebe9f0] min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/techStack" element={<TechStack />} />

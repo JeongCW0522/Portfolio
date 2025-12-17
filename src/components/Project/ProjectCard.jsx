@@ -15,7 +15,7 @@ const ProjectCard = ({ item }) => {
   return (
     <div
       className={clsx(
-        "w-full max-w-6xl p-10 bg-linear-to-r border border-[#272727] rounded-3xl overflow-hidden",
+        "w-full max-w-6xl p-10 bg-linear-to-r border border-border rounded-3xl overflow-hidden",
         item.bgColor
       )}
     >
@@ -30,7 +30,7 @@ const ProjectCard = ({ item }) => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="overflow-hidden mt-10 -mb-10 -mx-10"
           >
-            <div className="p-10 rounded-b-2xl bg-linear-to-br from-[#271b38] to-[rgb(1,11,26)] border border-white/10">
+            <div className="p-10 rounded-b-2xl bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]">
               <ProjectFeatures item={item} />
               <ProjectTechStack item={item} />
               <ProjectMotivation item={item} />
