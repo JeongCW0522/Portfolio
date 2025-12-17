@@ -12,18 +12,19 @@ const getOffset = (index, activeIndex, length) => {
   return raw;
 };
 
-const ProjectCard = ({ item, index, activeIndex, setActiveIndex, total }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const ProjectCard = ({
+  item,
+  index,
+  activeIndex,
+  setActiveIndex,
+  total,
+  onOpenModal,
+}) => {
   const offset = getOffset(index, activeIndex, total);
 
   const handleClick = () => {
-    if (offset === 0) {
-      // 가운데 카드일 때만 모달 열기
-      setIsOpen(true);
-    } else {
-      // 옆 카드일 때는 가운데로 이동
-      setActiveIndex(index);
-    }
+    if (offset === 0) onOpenModal(item);
+    else setActiveIndex(index);
   };
 
   return (
@@ -61,12 +62,6 @@ const ProjectCard = ({ item, index, activeIndex, setActiveIndex, total }) => {
           </div>
         </div>
       </motion.div>
-
-      <ProjectModal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        item={item}
-      />
     </>
   );
 };
