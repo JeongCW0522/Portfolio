@@ -9,6 +9,7 @@ import ProjectGithubLink from "./ProjectGitHubLink";
 import { X } from "lucide-react";
 import ProjectHeader from "./ProjectHeader";
 import clsx from "clsx";
+import { useEffect } from "react";
 
 const backdrop = {
   hidden: { opacity: 0 },
@@ -32,6 +33,22 @@ const modal = {
 };
 
 const ProjectModal = ({ isOpen, onClose, item }) => {
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -49,10 +66,16 @@ const ProjectModal = ({ isOpen, onClose, item }) => {
             animate="show"
             exit="exit"
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-6xl max-xl:w-[90%] max-h-[85vh] overflow-y-auto hide-scrollbar rounded-3xl p-10 bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]"
+            className="relative w-full max-w-6xl max-xl:w-[90%] max-h-[85vh] overflow-y-auto hide-scrollbar rounded-3xl pt-5 px-10 pb-10 bg-linear-to-br from-[#4c3769] to-[rgb(5,37,85)]"
           >
+            <button
+              type="button"
+              onClick={onClose}
+              className="sticky ml-auto top-6 block z-20 text-white/70 hover:text-white transition"
+            >
+              <X size={26} />
+            </button>
             <ProjectHeader item={item} onClose={onClose} />
-
             <ProjectFeatures item={item} />
             <ProjectTechStack item={item} />
             <ProjectMotivation item={item} />
