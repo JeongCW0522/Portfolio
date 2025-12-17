@@ -8,7 +8,7 @@ const Header = () => {
   const activePath = location.pathname;
 
   return (
-    <div className="bg-[#0f0420] p-4 flex justify-center items-center h-20 top-0 left-0 w-full border border-b-[#272727]">
+    <div className="bg-[#f5f4f4] p-4 flex justify-center items-center h-20 top-0 left-0 w-full border-b border-[#e5e5e5]">
       <div className="flex justify-between items-center w-full max-w-6xl">
         <h2 className="bg-linear-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent text-2xl font-bold">
           MyPortfolio
@@ -19,8 +19,10 @@ const Header = () => {
             <Link
               to={item.path}
               key={item.path}
-              className="px-4 py-3 relative cursor-pointer"
+              className="px-4 py-3 relative cursor-pointer group"
             >
+              <span className="absolute inset-0 rounded-3xl bg-linear-to-r from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition" />
+
               {activePath === item.path && (
                 <motion.span
                   className="absolute inset-0 bg-linear-to-r from-purple-500 to-blue-500 rounded-3xl"
@@ -34,7 +36,7 @@ const Header = () => {
               )}
               <span
                 className={clsx(
-                  "text-[#9a9898] font-semibold relative hover:text-white hover:scale-105 active:scale-95 transition-all",
+                  "font-semibold relative transition-all",
                   activePath === item.path ? "text-white" : "text-[#9a9898]"
                 )}
               >

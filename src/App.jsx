@@ -13,10 +13,10 @@ export default function App() {
     <BrowserRouter>
       <Header />
 
-      <div className="bg-black min-h-screen">
+      <div className="bg-[#fafafa] min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/tachStack" element={<TechStack />} />
+          <Route path="/techStack" element={<TechStack />} />
           <Route path="/project" element={<Project />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/strengths" element={<Strengths />} />
