@@ -11,7 +11,7 @@ const LearningInfo = () => {
       hoverColor="hover:border-green-300"
       iconBgColor="from-green-300 to-green-600"
     >
-      <ul className="space-y-3 text-white">
+      <ul className="space-y-3 font-medium text-gray-400">
         {learningList.map((item) => (
           <li
             key={item.text}

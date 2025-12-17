@@ -11,7 +11,7 @@ const GoalsInfo = () => {
       hoverColor="hover:border-orange-400"
       iconBgColor="from-orange-400 to-orange-600"
     >
-      <ul className="space-y-3 text-white">
+      <ul className="space-y-3 font-medium text-gray-400">
         {nextGoals.map((item) => (
           <li
             key={item.text}

@@ -1,6 +1,6 @@
 import { CircleCheckBig, Zap } from "lucide-react";
 
-const ProjectFeatueres = ({ item }) => {
+const ProjectFeatures = ({ item }) => {
   return (
     <div className="flex gap-10">
       <img
@@ -31,4 +31,4 @@ const ProjectFeatueres = ({ item }) => {
   );
 };
 
-export default ProjectFeatueres;
+export default ProjectFeatures;

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import clsx from "clsx";
 import ProjectHeader from "./ProjectHeader";
-import ProjectFeatueres from "./ProjectFeatueres";
+import ProjectFeatures from "./ProjectFeatures";
 import ProjectTechStack from "./ProjectTechStack";
 import ProjectMotivation from "./ProjectMotivation";
 import ProjectImplementation from "./ProjectImplementation";
@@ -31,7 +31,7 @@ const ProjectCard = ({ item }) => {
             className="overflow-hidden mt-10 -mb-10 -mx-10"
           >
             <div className="p-10 rounded-b-2xl bg-linear-to-br from-[#271b38] to-[rgb(1,11,26)] border border-white/10">
-              <ProjectFeatueres item={item} />
+              <ProjectFeatures item={item} />
               <ProjectTechStack item={item} />
               <ProjectMotivation item={item} />
               <ProjectImplementation item={item} />

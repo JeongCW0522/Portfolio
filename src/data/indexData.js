@@ -1,7 +1,7 @@
 export const interestItems = [
   "Frontend",
-  "UI/UX Design",
-  "Animation Design",
+  "State Management",
+  "Web Animations",
   "Web Accessibility",
 ];
 

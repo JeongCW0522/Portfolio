@@ -14,7 +14,7 @@ const Home = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="flex justify-center items-center p-15"
     >
-      <div className="w-full max-w-6xl p-10 bg-linear-to-br from-[#271b38] to-[rgb(1,11,26)] border border-[#272727] rounded-3xl">
+      <div className="w-full max-w-6xl p-10 bg-bgColor border border-border rounded-3xl">
         <ProfileCard />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-15">

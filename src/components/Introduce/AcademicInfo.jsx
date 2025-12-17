@@ -9,10 +9,10 @@ const AcademicInfo = () => {
       hoverColor="hover:border-purple-500"
       iconBgColor="from-blue-500 to-purple-500"
     >
-      <p className="text-gray-400 text-sm mb-1">전공</p>
-      <p className="text-white mb-3">컴퓨터공학과</p>
-      <p className="text-gray-400 text-sm mb-1">학년</p>
-      <p className="text-white">3학년</p>
+      <p className="text-gray-500 text-sm mb-1 font-medium">전공</p>
+      <p className="text-gray-400 mb-3">컴퓨터공학과</p>
+      <p className="text-gray-500 text-sm mb-1 font-medium">학년</p>
+      <p className="text-gray-400">3학년</p>
     </InfoCard>
   );
 };

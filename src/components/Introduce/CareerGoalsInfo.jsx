@@ -10,7 +10,7 @@ const CareerGoalsInfo = () => {
       hoverColor="hover:border-blue-400"
       iconBgColor="from-blue-600 to-blue-400"
     >
-      <ul className="space-y-3 text-white">
+      <ul className="space-y-3 font-medium text-gray-500">
         {careerGoals.map((item) => (
           <li
             key={item.title}

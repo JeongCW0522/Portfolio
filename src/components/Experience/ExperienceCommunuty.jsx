@@ -1,10 +1,10 @@
-import { experienceList } from "../../data/experience";
+import { experienceCommunityList } from "../../data/experience";
 import ExperienceCard from "./ExperienceCard";
 
 const ExperienceCommunity = () => {
   return (
     <>
-      {experienceList.map((item) => (
+      {experienceCommunityList.map((item) => (
         <ExperienceCard key={item.title} {...item} />
       ))}
     </>

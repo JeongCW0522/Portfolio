@@ -4,7 +4,7 @@ const InfoCard = ({ icon, title, children, hoverColor, iconBgColor }) => {
   return (
     <div
       className={clsx(
-        "p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:scale-103",
+        "p-6 rounded-2xl bg-white/60 border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:scale-103 shadow-sm",
         hoverColor
       )}
     >
@@ -17,7 +17,7 @@ const InfoCard = ({ icon, title, children, hoverColor, iconBgColor }) => {
         >
           {icon}
         </div>
-        <h2 className="text-white text-xl font-semibold">{title}</h2>
+        <h2 className="text-gray-500 text-xl font-semibold">{title}</h2>
       </div>
       {children}
     </div>
