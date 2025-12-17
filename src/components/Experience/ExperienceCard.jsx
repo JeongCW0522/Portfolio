@@ -17,11 +17,11 @@ const ExperienceCard = ({ title, date, desc, Achieve1, Achieve2, color }) => {
 
         <div className="flex items-center gap-3">
           <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-gray-500">{Achieve1}</p>
+          <p className="text-gray-500 break-keep leading-5">{Achieve1}</p>
         </div>
         <div className="flex items-center gap-3">
           <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-gray-500">{Achieve2}</p>
+          <p className="text-gray-500 break-keep leading-5">{Achieve2}</p>
         </div>
       </div>
     </div>

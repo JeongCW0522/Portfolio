@@ -12,7 +12,7 @@ const Home = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="flex justify-center items-center p-5 sm:p-15"
+      className="flex justify-center items-center pt-15 p-5 sm:p-15"
     >
       <div className="w-full max-w-6xl p-5 sm:p-10 bg-bgColor border border-border rounded-3xl">
         <ProfileCard />

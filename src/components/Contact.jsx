@@ -9,6 +9,7 @@ const Contact = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
+      className="p-5"
     >
       <PageTitle
         title="Get In Touch"
@@ -16,9 +17,8 @@ const Contact = () => {
       />
 
       <div className="flex justify-center">
-        <div className="w-full max-w-2xl p-8 bg-bgColor border border-border rounded-3xl">
+        <div className="w-full max-w-2xl p-5 sm:p-8 bg-bgColor border border-border rounded-3xl">
           <h2 className="text-gray-500 text-3xl font-semibold mb-8">Contact</h2>
-
           <div className="space-y-5">
             {contactItems.map((item) => (
               <ContactItem

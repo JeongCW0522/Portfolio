@@ -15,18 +15,18 @@ const StrengthsCard = ({
       >
         <h1 className="text-white text-3xl mb-1">{title}</h1>
         <p className="text-gray-100 mb-6">{subTitle}</p>
-        <p className="text-white">{desc}</p>
+        <p className="text-white break-keep leading-5">{desc}</p>
       </div>
 
       <div className="flex flex-col space-y-4">
         <h3 className="text-gray-500 font-medium text-lg">Examples:</h3>
         <div className="flex items-center gap-3">
-          <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-gray-500">{content1}</p>
+          <div className="min-w-2 h-2 bg-gray-400 rounded-full" />
+          <p className="text-gray-500 break-keep leading-5">{content1}</p>
         </div>
         <div className="flex items-center gap-3">
           <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-gray-500">{content2}</p>
+          <p className="text-gray-500 break-keep leading-5">{content2}</p>
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ const Strengths = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="flex flex-col justify-center items-center"
+      className="flex flex-col justify-center items-center p-5"
     >
       <PageTitle
         title="Core Strengths"
