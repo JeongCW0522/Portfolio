@@ -158,6 +158,6 @@ export const projectItems = [
       "자기소개서 분석도 추가",
     ],
     bgColor: "from-teal-500 to-teal-400",
-    gitHub: "https://github.com/JobMate-team/jobmate-frontend",
+    gitHub: "https://github.com/JobMate-team",
   },
 ];

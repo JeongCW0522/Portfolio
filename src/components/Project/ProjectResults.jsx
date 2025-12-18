@@ -3,7 +3,7 @@ import { Heart, TrendingUp } from "lucide-react";
 const ProjectResults = ({ item }) => {
   return (
     <div>
-      <div className="flex items-stretch gap-5 mt-10 mb-5">
+      <div className="flex sm:flex-row flex-col items-stretch gap-5 mt-10 mb-5">
         <div className="flex-1 flex flex-col gap-5">
           <div className="flex items-center gap-2">
             <TrendingUp className="text-blue-500" />
@@ -30,11 +30,11 @@ const ProjectResults = ({ item }) => {
         <TrendingUp className="text-purple-500" />
         <h1 className="text-xl text-white">Future Improvements</h1>
       </div>
-      <div className="flex gap-3">
+      <div className="flex flex-wrap gap-3">
         {item.futureImprovements.map((future, idx) => (
           <div
             key={idx}
-            className="bg-purple-400/15 border border-purple-400/40 flex items-center gap-3 p-4 py-3 rounded-full text-white hover:scale-105 transition"
+            className="bg-purple-400/15 border border-purple-400/40 flex items-center gap-3 p-4 py-3 rounded-full text-white hover:scale-105 transition break-keep leading-5"
           >
             {future}
           </div>
