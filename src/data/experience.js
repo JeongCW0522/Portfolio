@@ -35,4 +35,12 @@ export const experienceAwardList = [
     Achieve2: "마지막까지 QA 진행하며 오류 수정",
     color: "from-orange-400 to-orange-600",
   },
+  {
+    title: "UMC 장기 해커톤 우수상",
+    date: "2025.12.22",
+    desc: "UMC 데모데이 전 일주일동안 진행한 장기 해커톤 우수상 ",
+    Achieve1: "기획부터 개발까지 전 과정 참여 및 핵심 기능 구현",
+    Achieve2: "애니메이션 기능을 추가하여 편안한 UX 제공",
+    color: "from-orange-400 to-orange-600",
+  },
 ];
